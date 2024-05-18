@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --clr-main: #4b33a8;
-    --clr-main-light: #785ce9;
-    --clr-white: #ececec;
-    --clr-gray: #e2e2e2;
+    --clr-main: #f4ece1;
+    --clr-main-light: #000;
+    --clr-black: #000;
+    --clr-gray: #f4ece1;
     --clr-red: #961818;
 }
 
@@ -37,7 +37,7 @@ a {
 aside {
     padding: 2rem;
     padding-right: 0;
-    color: var(--clr-white);
+    color: var(--clr-black);
     position: sticky;
     top: 0;
     height: 100vh;
@@ -60,7 +60,7 @@ aside {
 .boton-menu {
     background-color: transparent;
     border: 0;
-    color: var(--clr-white);
+    color: var(--clr-black);
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -72,7 +72,7 @@ aside {
 }
 
 .boton-menu.active {
-    background-color: var(--clr-white);
+    background-color: var(--clr-black);
     color: var(--clr-main);
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
@@ -88,7 +88,7 @@ aside {
     right: 0;
     background-color: transparent;
     border-bottom-right-radius: .5rem;
-    box-shadow: 0 1rem 0 var(--clr-white);
+    box-shadow: 0 1rem 0 var(--clr-black);
 }
 
 .boton-menu.active::after {
@@ -100,7 +100,7 @@ aside {
     right: 0;
     background-color: transparent;
     border-top-right-radius: .5rem;
-    box-shadow: 0 -1rem 0 var(--clr-white);
+    box-shadow: 0 -1rem 0 var(--clr-black);
 }
 
 .boton-menu > i.bi-hand-index-thumb-fill,
@@ -113,7 +113,7 @@ aside {
 }
 
 .numerito {
-    background-color: var(--clr-white);
+    background-color: var(--clr-black);
     color: var(--clr-main);
     padding: .15rem .25rem;
     border-radius: .25rem;
@@ -121,7 +121,7 @@ aside {
 
 .boton-carrito.active .numerito {
     background-color: var(--clr-main);
-    color: var(--clr-white);
+    color: var(--clr-black);
 }
 
 .texto-footer {
@@ -130,7 +130,7 @@ aside {
 }
 
 main {
-    background-color: var(--clr-white);
+    background-color: var(--clr-black);
     margin: 1rem;
     margin-left: 0;
     border-radius: 2rem;
@@ -155,7 +155,7 @@ main {
 
 .producto-detalles {
     background-color: var(--clr-main);
-    color: var(--clr-white);
+    color: var(--clr-black);
     padding: .5rem;
     border-radius: 1rem;
     margin-top: -2rem;
@@ -171,19 +171,19 @@ main {
 
 .producto-agregar {
     border: 0;
-    background-color: var(--clr-white);
+    background-color: var(--clr-black);
     color: var(--clr-main);
     padding: .4rem;
     text-transform: uppercase;
     border-radius: 2rem;
     cursor: pointer;
-    border: 2px solid var(--clr-white);
+    border: 2px solid var(--clr-black);
     transition: background-color .2s, color .2s;
 }
 
 .producto-agregar:hover {
     background-color: var(--clr-main);
-    color: var(--clr-white);
+    color: var(--clr-black);
 }
 
 
@@ -223,7 +223,14 @@ main {
 }
 
 .carrito-producto small {
-    font-size: .75rem;
+    font-size: .80rem;
+}
+
+.carrito-producto-titulo,
+.carrito-producto-cantidad,
+.carrito-producto-precio,
+.carrito-producto-subtotal{
+    color: #000;
 }
 
 .carrito-producto-eliminar {
@@ -239,11 +246,11 @@ main {
 }
 
 .carrito-acciones-vaciar {
+    color: #000;
     border: 0;
     background-color: var(--clr-gray);
     padding: 1rem;
     border-radius: 1rem;
-    color: var(--clr-main);
     text-transform: uppercase;
     cursor: pointer;
 }
@@ -253,10 +260,11 @@ main {
 }
 
 .carrito-acciones-total {
+    font-weight: bold;
     display: flex;
-    background-color: var(--clr-gray);
+    background-color: var(--clr-main);
     padding: 1rem;
-    color: var(--clr-main);
+    color: var(--clr-main-light);
     text-transform: uppercase;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
@@ -267,7 +275,7 @@ main {
     border: 0;
     background-color: var(--clr-main);
     padding: 1rem;
-    color: var(--clr-white);
+    color: var(--clr-black);
     text-transform: uppercase;
     cursor: pointer;
     border-top-right-radius: 1rem;
@@ -385,7 +393,6 @@ main {
     
 
 }
-
 
 
 @media screen and (max-width: 400px) {
