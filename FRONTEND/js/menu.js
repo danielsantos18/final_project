@@ -1,11 +1,13 @@
-const openMenu = document.querySelector("#open-menu");
-const closeMenu = document.querySelector("#close-menu");
-const aside = document.querySelector("aside");
+document.addEventListener('DOMContentLoaded', () => {
+    const openMenuButton = document.getElementById('open-menu');
+    const closeMenuButton = document.getElementById('close-menu');
+    const aside = document.querySelector('aside');
 
-openMenu.addEventListener("click", () => {
-    aside.classList.add("aside-visible");
-})
+    openMenuButton.addEventListener('click', () => {
+        aside.classList.add('open');
+    });
 
-closeMenu.addEventListener("click", () => {
-    aside.classList.remove("aside-visible");
-})
+    closeMenuButton.addEventListener('click', () => {
+        aside.classList.remove('open');
+    });
+});
